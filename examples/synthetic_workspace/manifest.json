@@ -1,0 +1,12 @@
+{
+  "synthetic": true,
+  "description": "Hand-authored file-tool demonstration, not a model run or patent corpus.",
+  "candidate_count": 1,
+  "documents": [
+    {
+      "reference": "SYNTHETIC-A",
+      "title": "Fictional coating evidence walkthrough",
+      "file": "docs/SYNTHETIC-A.md"
+    }
+  ]
+}

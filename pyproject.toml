@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coat-weave-harness"
+version = "0.1.0"
+description = "Retrieval foundation for a tool-using coating research agent"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Nathan10969"}]
+dependencies = [
+  "numpy>=1.24,<3",
+  "openai>=1.0,<3",
+  "python-dotenv>=1.0,<2",
+  "PyYAML>=6.0,<7",
+  "sentence-transformers>=3.0,<6",
+  "torch>=2.1",
+  "transformers>=4.56,<6",
+]
+
+[project.urls]
+Repository = "https://github.com/Nathan10969/coat_weave_harness"
+Issues = "https://github.com/Nathan10969/coat_weave_harness/issues"
+
+[project.scripts]
+coat-weave-harness = "patent_coating.patent_rag_app:main"
+
+[tool.setuptools.packages.find]
+include = ["patent_coating*"]
+exclude = ["patent_coating.tests*"]
+namespaces = false
+
+[tool.setuptools.package-data]
+patent_coating = ["patent_rag_config.yaml", ".env.example"]

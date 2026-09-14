@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="460" viewBox="0 0 1440 460" role="img" aria-labelledby="title description">
+  <title id="title">CoatWeave Harness — Find patents. Investigate evidence.</title>
+  <desc id="description">An independent patent retrieval and evidence investigation harness. A restrained woven-line illustration connects retrieval to a selected full-text workspace.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0a1b2a"/><stop offset="1" stop-color="#102f40"/></linearGradient>
+    <linearGradient id="thread" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#43d4b1" stop-opacity="0.18"/><stop offset="1" stop-color="#43d4b1"/></linearGradient>
+  </defs>
+  <rect width="1440" height="460" rx="20" fill="url(#background)"/>
+  <path d="M48 48H1392M48 412H1392" stroke="#426373" stroke-opacity="0.45"/>
+  <g font-family="'Trebuchet MS', Verdana, sans-serif">
+    <text x="64" y="88" font-size="17" letter-spacing="3" fill="#7cbaae">PATENT RETRIEVAL / EVIDENCE INVESTIGATION</text>
+    <text x="62" y="197" font-size="68" font-weight="700" letter-spacing="-2" fill="#f2f6f5">CoatWeave Harness</text>
+    <text x="66" y="260" font-size="31" fill="#cce1e3">Find patents. Investigate evidence.</text>
+    <text x="66" y="319" font-size="20" fill="#94b0bb">Candidate retrieval → selected full-text workspace → grounded answers</text>
+    <text x="66" y="384" font-size="16" letter-spacing="1.8" fill="#7cbaae">INDEPENDENT · TOOL-DRIVEN · EVIDENCE-FIRST</text>
+  </g>
+  <g fill="none" stroke="url(#thread)" stroke-width="2">
+    <path d="M1060 114C1140 114 1130 162 1210 162H1366"/>
+    <path d="M1060 146C1140 146 1130 194 1210 194H1366"/>
+    <path d="M1060 178C1140 178 1130 226 1210 226H1366"/>
+    <path d="M1060 210C1140 210 1130 258 1210 258H1366"/>
+    <path d="M1060 242C1140 242 1130 290 1210 290H1366"/>
+    <path d="M1060 274C1140 274 1130 322 1210 322H1366"/>
+    <path d="M1060 306C1140 306 1130 354 1210 354H1366"/>
+  </g>
+  <g fill="none" stroke="#69e2c4" stroke-opacity="0.28">
+    <path d="M1194 96V370M1226 96V370M1258 96V370M1290 96V370M1322 96V370"/>
+  </g>
+  <rect x="1180" y="145" width="162" height="198" rx="8" fill="#102d3b" fill-opacity="0.8" stroke="#43d4b1"/>
+  <g stroke="#a3d9d2" stroke-width="2"><path d="M1204 179H1318M1204 198H1292M1204 229H1318M1204 248H1302M1204 279H1318M1204 298H1276"/></g>
+  <path d="M1204 218H1318M1204 268H1318" stroke="#43d4b1" stroke-opacity="0.4"/>
+</svg>

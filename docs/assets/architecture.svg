@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="780" viewBox="0 0 1440 780" role="img" aria-labelledby="title description">
+  <title id="title">CoatWeave Harness architecture</title>
+  <desc id="description">Implemented flow: question, chunk cosine search, unique patent candidates, representative-chunk rerank, selected full-text workspace, find grep read tools, and evidence-backed answer. Defaults are ten candidates and five selected patents. A complete coating research agent is a separate roadmap vision, not an implemented capability.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1L8 5L1 9" fill="none" stroke="#43d4b1" stroke-width="1.5"/></marker></defs>
+  <rect width="1440" height="780" rx="20" fill="#0a1b2a"/>
+  <g font-family="'Trebuchet MS', Verdana, sans-serif">
+    <text x="56" y="65" font-size="30" font-weight="700" fill="#f2f6f5">From a question to inspectable evidence</text>
+    <text x="56" y="101" font-size="18" fill="#94b0bb">Current implementation · retrieve candidate patents, then investigate selected full text</text>
+    <rect x="40" y="135" width="1360" height="230" rx="12" fill="#102b3a" stroke="#2d5361"/>
+    <text x="64" y="173" font-size="18" font-weight="700" letter-spacing="2" fill="#43d4b1">01 / RETRIEVE &amp; SELECT</text>
+    <g fill="#0d2130" stroke="#406372">
+      <rect x="64" y="204" width="215" height="112" rx="8"/>
+      <rect x="329" y="204" width="280" height="112" rx="8"/>
+      <rect x="659" y="204" width="314" height="112" rx="8"/>
+      <rect x="1023" y="204" width="353" height="112" rx="8"/>
+    </g>
+    <g fill="#eff6f4" font-size="21" font-weight="700" text-anchor="middle">
+      <text x="171" y="266">QUESTION</text>
+      <text x="469" y="249">CHUNK COSINE</text><text x="469" y="278">SEARCH</text>
+      <text x="816" y="242">UNIQUE PATENT</text><text x="816" y="271">CANDIDATES</text>
+      <text x="1199" y="249">REPRESENTATIVE-CHUNK</text><text x="1199" y="278">RERANK</text>
+    </g>
+    <text x="816" y="298" text-anchor="middle" font-size="17" fill="#8ab8b4">10 candidates by default</text>
+    <g stroke="#43d4b1" stroke-width="2" fill="none" marker-end="url(#arrow)"><path d="M283 260H319"/><path d="M613 260H649"/><path d="M977 260H1013"/></g>
+    <rect x="40" y="406" width="1360" height="223" rx="12" fill="#102b3a" stroke="#2d5361"/>
+    <text x="64" y="444" font-size="18" font-weight="700" letter-spacing="2" fill="#43d4b1">02 / INVESTIGATE EVIDENCE</text>
+    <g fill="#0d2130" stroke="#406372">
+      <rect x="64" y="473" width="476" height="120" rx="8"/>
+      <rect x="628" y="473" width="315" height="120" rx="8"/>
+      <rect x="1031" y="473" width="345" height="120" rx="8"/>
+    </g>
+    <g fill="#eff6f4" font-size="21" font-weight="700" text-anchor="middle">
+      <text x="302" y="506">SELECTED FULL-TEXT WORKSPACE</text>
+      <text x="785" y="542">FIND / GREP / READ</text>
+      <text x="1203" y="523">EVIDENCE-BACKED</text><text x="1203" y="552">ANSWER</text>
+    </g>
+    <text x="302" y="538" text-anchor="middle" font-size="17" fill="#8ab8b4">5 selected patents by default</text>
+    <text x="302" y="567" text-anchor="middle" font-size="17" fill="#94b0bb">Candidate Markdown, not the entire library</text>
+    <g stroke="#43d4b1" stroke-width="2" fill="none" marker-end="url(#arrow)"><path d="M1199 320V386H565V452H302V463"/><path d="M544 533H618"/><path d="M947 533H1021"/></g>
+    <rect x="40" y="667" width="1360" height="77" rx="10" fill="none" stroke="#6a8591" stroke-opacity="0.7" stroke-dasharray="6 7"/>
+    <text x="64" y="699" font-size="17" letter-spacing="2" fill="#a2b5bc">ROADMAP / VISION</text>
+    <text x="64" y="726" font-size="19" fill="#bacbd0">A complete coating research agent</text>
+    <text x="1367" y="713" font-size="17" text-anchor="end" fill="#8da5af">Future scope · not implemented by this diagram</text>
+  </g>
+</svg>

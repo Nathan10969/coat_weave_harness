@@ -1,0 +1,48 @@
+paths:
+  # These paths resolve relative to this configuration file.
+  mineru_root: ../data/mineru
+  parsed_dir: ../data/parsed_patents
+  index_dir: ../data/embedding_index
+  workspace_root: ../agentic_runs
+  env_file: .env
+
+models:
+  # Model paths are passed through unchanged: run from the repository root
+  # with these example paths, or use your own absolute local paths.
+  embedding_path: models/Qwen3-Embedding-0.6B
+  reranker_path: models/Qwen3-Reranker-0.6B
+  device: cuda
+  dtype: bfloat16
+  embedding_max_seq_length: 1536
+  reranker_max_length: 4096
+  # Example provider configuration, not an availability/compatibility claim.
+  llm_model: deepseek-v4-flash
+  llm_base_url: https://api.deepseek.com
+  api_key_env: DEEPSEEK_API_KEY
+
+parsing:
+  max_tokens: 900
+  overlap_tokens: 100
+
+index:
+  embedding_batch_size: 8
+
+retrieval:
+  # Counts are unique patent publication references, not chunks.
+  candidate_patents: 10
+  final_patents: 5
+  chunk_pool_top_k: 200
+  max_chunk_pool_top_k: 2000
+  representative_chunks: 3
+  rerank_batch_size: 1
+
+agent:
+  max_rounds: 24
+  max_tool_calls: 80
+  max_total_tool_output_chars: 300000
+  request_retries: 3
+  tool_retries: 2
+  retry_base_seconds: 1.0
+  require_tool_use: true
+  temperature: 0.1
+  max_tokens: 4096
