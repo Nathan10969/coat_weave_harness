@@ -1,6 +1,7 @@
 <p align="center"><img src="docs/assets/hero.svg" alt="CoatWeave Harness — find patents, investigate evidence" width="100%" /></p>
 
 <p align="center">
+  <a href="https://github.com/Nathan10969/coat_weave_harness/actions/workflows/offline-tests.yml"><img src="https://github.com/Nathan10969/coat_weave_harness/actions/workflows/offline-tests.yml/badge.svg" alt="Offline CI tests" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-14b8a6" alt="MIT license" /></a>
   <img src="https://img.shields.io/badge/Python-3.10%2B-3b82f6" alt="Python 3.10 or newer" />
   <img src="https://img.shields.io/badge/stage-retrieval%20foundation-334155" alt="Retrieval foundation" />
@@ -61,6 +62,8 @@ coat-weave-harness --help
 See the [synthetic walkthrough](examples/README.md) to explore a formulation, test method and result in different sections without any model, GPU or paid API call. Its records are invented demonstrations, not patent data or scientific findings.
 
 Initial publication verification: the unchanged suite passed **16/16 tests on WSL Ubuntu / Python 3.12**. On Windows, 15 passed and one errored while creating its symlink fixture because the account lacked permission; no test was modified or silently skipped. Editable installation and CLI help passed. These are offline engineering checks, not model-quality or real-ingestion acceptance. The included Linux CI workflow repeats the tests on Python 3.11 and 3.12; its result is separate from these local checks.
+
+The [initial publication CI run](https://github.com/Nathan10969/coat_weave_harness/actions/runs/34808374527) passed for commit `6f7f3766`. The badge above reflects subsequent workflow status, not a model benchmark.
 
 ## Run with your own corpus and models
 

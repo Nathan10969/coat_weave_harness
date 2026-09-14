@@ -29,5 +29,7 @@
 
 ## Task 4: Publication
 
-- [ ] Create public repository only if absent, set description/topics, commit as Nathan10969 with real date and push normal `main`.
-- [ ] Verify remote SHA, README, MIT and visuals; save local sanitized audit receipt and report verification limits.
+- [x] Create public repository only if absent, set description/topics, commit as Nathan10969 with real date and push normal `main`.
+- [x] Verify remote SHA, README, MIT and visuals; save local sanitized audit receipt and report verification limits.
+
+Initial release commit: `6f7f37663e2b7fc874c9cd7304052e5964434a5e`. Public metadata recognizes MIT. Initial GitHub offline workflow run `34808374527` completed successfully. Business Python files remained unchanged; model-quality and complete-agent acceptance remain outside this release.
