@@ -28,3 +28,22 @@ patent_coating/data/
 *.safetensors
 *.pem
 *.key
+
+# Harness state, local deployments and private runtime outputs.
+**/node_modules/
+**/.local/
+**/.pi/
+**/auth.json
+**/models.json
+**/settings.json
+**/credentials.json
+*.log
+*.jsonl
+!examples/**/*.jsonl
+*.p12
+*.pfx
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+._*

@@ -10,10 +10,15 @@ Everything under **planned** is future work, not implemented functionality or a 
 - Unique-publication aggregation and representative-chunk reranking.
 - Selected-patent full-text investigation through `find`, `grep`, `read`.
 - Streaming tool calls, per-question workspaces and execution traces.
+- Independent Pi SDK session/completion service, explicit Milvus patent tool,
+  versioned local/TOS Markdown access and optional workspace writing.
+- Metadata-only event logging and isolated local state; not tenant authorization.
 
 ## Planned: make retrieval a reusable tool
 
 - Define a stable retrieval request/result contract for the outer agent.
+- Connect the existing NumPy CLI and any separately implemented hypergraph engine
+  to Pi; neither connection is provided by the migrated Milvus service.
 - Return selected documents, source identity and auditable retrieval metadata.
 - Allow query refinement and explicit candidate expansion when evidence is insufficient.
 - Bind full-text content versions to the retrieval artifacts.

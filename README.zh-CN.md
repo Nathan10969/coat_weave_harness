@@ -6,7 +6,28 @@
 
 长期目标是一个完整的、工具驱动的 coating research agent：借鉴 Codex / Claude Code 的任务工作区与工具交互方式，围绕涂料研究任务规划、调用工具、调查证据并记录过程。
 
-**当前发布的是它的检索基础层，不是完整 coating agent。** 本项目不声称具备 Codex / Claude Code 的完整能力，也不存在官方关联。
+**仓库包含原有 Python 检索基础层，以及独立的 Pi SDK 服务层。** 本项目不声称具备完整自主涂料研发能力，也不声称具备 Codex / Claude Code 的完整能力或官方关联。
+
+## Pi 服务层
+
+[pi-harness/](pi-harness/README.md) 迁入经授权并脱敏的会话 API、原生事件 SSE、兼容 completion 接口、`patent_search` 工具和 FastAPI/Milvus/Markdown 后端。使用固定版本的官方 Pi SDK，不复制整个上游仓库。
+
+默认只读、本地回环地址、独立运行目录；写入工具可显式开启，仅允许写入工作区 `outputs/`。两种 API 使用统一的 11 字段元数据日志，不记录正文、推理、原始工具参数或返回内容。原生会话持久化文件仍可能含敏感内容，必须留在私有目录。
+
+原生 `/sessions/{id}/events` 可以提供工具调用状态；兼容 completion 接口目前仅流式返回正文和心跳，不能宣称已经向它增加工具进度事件。共享 Bearer token 不是多租户鉴权；shell 单独开启且不受文件路径规则限制。
+
+迁移去掉了真实主机、部署账号、固定桶名、集合审计信息与私有提示词。模型、数据库、文档和凭证需要使用自己的配置。本次没有接入超图 RAG，也没有自动把原 Python CLI 接到 Pi；两条检索实现保持独立。
+
+```bash
+cd pi-harness
+npm ci --ignore-scripts
+npm run check
+npm test
+npm run build
+npm start
+```
+
+启动配置、可选写入、数据保留和安全边界见 [服务说明](pi-harness/README.md)，离线检查见 [验证记录](docs/PUBLICATION_CHECKS.md)。健康检查和固定欢迎语不能证明真实模型或数据库已接通。
 
 ## 为什么不只匹配 chunk？
 
@@ -23,6 +44,8 @@
 当前 CLI 配置先选最多 10 篇不同专利，再重排保留最多 5 篇。之后读取的是入选专利的完整清洗 Markdown，不是只把命中的几个 chunk 塞给模型。Agent 可以继续跨章节找证据；但被初筛或重排排除的专利，目前无法由它重新召回。
 
 ## 已实现与未实现
+
+以下说明描述原有 Python CLI，不是新增 Pi 服务的接口清单。
 
 - 已实现：MinerU 输出清洗、章节切片、精确向量检索、专利聚合、代表 chunk 重排、全文文件工具、多轮流式调用与工具轨迹。
 - 提示词要求：搜索同义词和 OCR 词干、读上下文、区分实验与对比、核对单位与条件、逐结论引用行号。
@@ -53,6 +76,6 @@ coat-weave-harness --help
 
 ## 接下来
 
-先将检索链封装为完整 coating agent 可调用的工具，再逐步扩展任务规划、候选扩大、证据核验、研究工作区与更多涂料研究工具。详见 [Roadmap](docs/ROADMAP.md)，这些属于计划而非交付功能。
+Pi 服务已有独立的 Milvus 专利工具；将原 Python 检索链与超图 RAG 接入、扩展证据核验及其他涂料研究工具仍是后续工作。详见 [Roadmap](docs/ROADMAP.md)，不能将这些计划写成已交付功能。
 
 作者：[Nathan10969](https://github.com/Nathan10969)。软件及原创插图使用 [MIT](LICENSE)；不覆盖第三方专利、模型权重或服务条款。
