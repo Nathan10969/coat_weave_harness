@@ -1,32 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="460" viewBox="0 0 1440 460" role="img" aria-labelledby="title description">
-  <title id="title">CoatWeave Harness — Find patents. Investigate evidence.</title>
-  <desc id="description">An independent patent retrieval and evidence investigation harness. A restrained woven-line illustration connects retrieval to a selected full-text workspace.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="600" viewBox="0 0 1440 600" role="img" aria-labelledby="title desc">
+  <title id="title">CoatWeave Harness — find patents, investigate evidence</title>
+  <desc id="desc">A purple and electric-blue woven illustration connects patent fragments to a mint full-text document and orange evidence markers. The main branch is a Python retrieval foundation.</desc>
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0a1b2a"/><stop offset="1" stop-color="#102f40"/></linearGradient>
-    <linearGradient id="thread" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#43d4b1" stop-opacity="0.18"/><stop offset="1" stop-color="#43d4b1"/></linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#24114c"/><stop offset="0.55" stop-color="#142657"/><stop offset="1" stop-color="#072f46"/></linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#a68aff"/><stop offset="1" stop-color="#528bff"/></linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8af5c9"/><stop offset="1" stop-color="#43d6cf"/></linearGradient>
+    <linearGradient id="thread" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#a68aff" stop-opacity="0.2"/><stop offset="0.55" stop-color="#6d91ff"/><stop offset="1" stop-color="#75edc6"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#b4c5ff" stroke-opacity="0.06"/></pattern>
   </defs>
-  <rect width="1440" height="460" rx="20" fill="url(#background)"/>
-  <path d="M48 48H1392M48 412H1392" stroke="#426373" stroke-opacity="0.45"/>
-  <g font-family="'Trebuchet MS', Verdana, sans-serif">
-    <text x="64" y="88" font-size="17" letter-spacing="3" fill="#7cbaae">PATENT RETRIEVAL / EVIDENCE INVESTIGATION</text>
-    <text x="62" y="197" font-size="68" font-weight="700" letter-spacing="-2" fill="#f2f6f5">CoatWeave Harness</text>
-    <text x="66" y="260" font-size="31" fill="#cce1e3">Find patents. Investigate evidence.</text>
-    <text x="66" y="319" font-size="20" fill="#94b0bb">Candidate retrieval → selected full-text workspace → grounded answers</text>
-    <text x="66" y="384" font-size="16" letter-spacing="1.8" fill="#7cbaae">INDEPENDENT · TOOL-DRIVEN · EVIDENCE-FIRST</text>
+  <rect width="1440" height="600" rx="28" fill="url(#bg)"/>
+  <rect width="1440" height="600" rx="28" fill="url(#grid)"/>
+  <circle cx="1320" cy="92" r="210" fill="#7142cd" opacity="0.11"/>
+  <circle cx="1016" cy="514" r="210" fill="#00c9b6" opacity="0.06"/>
+  <g font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <rect x="64" y="53" width="267" height="35" rx="17.5" fill="#b6a1ff" fill-opacity="0.13" stroke="#a890ff" stroke-opacity="0.6"/>
+    <circle cx="84" cy="70.5" r="4" fill="#87f4c9"/>
+    <text x="100" y="77" font-size="14" font-weight="700" letter-spacing="1.4" fill="#dbd2ff">MAIN / PYTHON FOUNDATION</text>
+    <text x="60" y="190" font-size="77" font-weight="700" letter-spacing="-3" fill="#ffffff">CoatWeave</text>
+    <text x="60" y="274" font-size="77" font-weight="700" letter-spacing="-3" fill="url(#violet)">Harness</text>
+    <text x="65" y="337" font-size="29" font-weight="700" fill="#e5e9ff">Find patents. Investigate evidence.</text>
+    <text x="65" y="383" font-size="23" fill="#bccae9">用切片定位专利，用全文工具查证证据。</text>
+    <g font-size="14" font-weight="700" letter-spacing="0.8">
+      <rect x="65" y="437" width="151" height="40" rx="10" fill="#a589ff" fill-opacity="0.17"/>
+      <text x="85" y="462" fill="#d5c8ff">CHUNK SEARCH</text>
+      <rect x="228" y="437" width="172" height="40" rx="10" fill="#4c8dff" fill-opacity="0.18"/>
+      <text x="249" y="462" fill="#b9d0ff">FULL-TEXT TOOLS</text>
+      <rect x="412" y="437" width="170" height="40" rx="10" fill="#73e8c1" fill-opacity="0.13"/>
+      <text x="433" y="462" fill="#a4f3d7">INSPECTABLE TRACE</text>
+    </g>
+    <text x="65" y="547" font-size="14" letter-spacing="2.8" fill="#90a3c7">PATENT DISCOVERY → EVIDENCE INVESTIGATION</text>
   </g>
-  <g fill="none" stroke="url(#thread)" stroke-width="2">
-    <path d="M1060 114C1140 114 1130 162 1210 162H1366"/>
-    <path d="M1060 146C1140 146 1130 194 1210 194H1366"/>
-    <path d="M1060 178C1140 178 1130 226 1210 226H1366"/>
-    <path d="M1060 210C1140 210 1130 258 1210 258H1366"/>
-    <path d="M1060 242C1140 242 1130 290 1210 290H1366"/>
-    <path d="M1060 274C1140 274 1130 322 1210 322H1366"/>
-    <path d="M1060 306C1140 306 1130 354 1210 354H1366"/>
+  <g fill="none" stroke="url(#thread)" stroke-width="3">
+    <path d="M805 145C952 145 912 201 1050 201H1366"/>
+    <path d="M805 187C952 187 912 243 1050 243H1366"/>
+    <path d="M805 229C952 229 912 285 1050 285H1366"/>
+    <path d="M805 271C952 271 912 327 1050 327H1366"/>
+    <path d="M805 313C952 313 912 369 1050 369H1366"/>
+    <path d="M805 355C952 355 912 411 1050 411H1366"/>
+    <path d="M805 397C952 397 912 453 1050 453H1366"/>
   </g>
-  <g fill="none" stroke="#69e2c4" stroke-opacity="0.28">
-    <path d="M1194 96V370M1226 96V370M1258 96V370M1290 96V370M1322 96V370"/>
+  <g stroke="#6eb7ed" stroke-opacity="0.15"><path d="M1064 127V492M1106 127V492M1148 127V492M1190 127V492M1232 127V492M1274 127V492M1316 127V492"/></g>
+  <g transform="translate(1038 130) rotate(5 142 170)">
+    <rect x="14" y="17" width="276" height="344" rx="20" fill="#030b29" fill-opacity="0.3"/>
+    <rect width="276" height="344" rx="20" fill="#143c53" stroke="url(#mint)" stroke-width="2"/>
+    <rect x="24" y="28" width="62" height="8" rx="4" fill="#8aefd0"/>
+    <rect x="24" y="53" width="200" height="11" rx="5.5" fill="#c6e8ea"/>
+    <rect x="24" y="75" width="144" height="7" rx="3.5" fill="#779bb5"/>
+    <rect x="20" y="108" width="236" height="58" rx="10" fill="#6a5ae6" fill-opacity="0.4" stroke="#a594ff" stroke-opacity="0.8"/>
+    <rect x="37" y="125" width="178" height="7" rx="3.5" fill="#d5cdff"/>
+    <rect x="37" y="143" width="139" height="6" rx="3" fill="#a798eb"/>
+    <rect x="24" y="190" width="191" height="7" rx="3.5" fill="#799eb5"/>
+    <rect x="24" y="209" width="220" height="7" rx="3.5" fill="#799eb5"/>
+    <rect x="20" y="239" width="236" height="58" rx="10" fill="#56d6ac" fill-opacity="0.16" stroke="#7decc5"/>
+    <rect x="37" y="256" width="190" height="7" rx="3.5" fill="#a6f4d7"/>
+    <rect x="37" y="274" width="156" height="6" rx="3" fill="#6dccae"/>
+    <circle cx="246" cy="108" r="17" fill="#ffb16d"/>
+    <circle cx="246" cy="239" r="17" fill="#ffb16d"/>
+    <g font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#4a2453"><text x="246" y="113">1</text><text x="246" y="244">2</text></g>
   </g>
-  <rect x="1180" y="145" width="162" height="198" rx="8" fill="#102d3b" fill-opacity="0.8" stroke="#43d4b1"/>
-  <g stroke="#a3d9d2" stroke-width="2"><path d="M1204 179H1318M1204 198H1292M1204 229H1318M1204 248H1302M1204 279H1318M1204 298H1276"/></g>
-  <path d="M1204 218H1318M1204 268H1318" stroke="#43d4b1" stroke-opacity="0.4"/>
+  <g transform="translate(873 383)">
+    <circle cx="0" cy="0" r="42" fill="#20366b" stroke="#8e8bff" stroke-width="2"/>
+    <circle cx="-5" cy="-5" r="15" fill="none" stroke="#e0daff" stroke-width="4"/>
+    <path d="M6 6L19 19" stroke="#e0daff" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <rect x="951" y="500" width="351" height="47" rx="14" fill="#143c53" stroke="#5786a4"/>
+  <g font-family="Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle"><text x="1010" y="530" fill="#d4c7ff">find</text><text x="1126" y="530" fill="#b9d5ff">grep</text><text x="1242" y="530" fill="#a0f3d1">read</text></g>
+  <path d="M1068 511V536M1184 511V536" stroke="#5d829b"/>
 </svg>
